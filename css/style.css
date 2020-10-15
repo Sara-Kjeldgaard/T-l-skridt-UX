@@ -3,10 +3,125 @@
  **/
 
 body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     color: #16293e;
 }
+html, body, main {
+    width: 100%;
+    margin: 0; 
+}
 
+
+h2 {
+    font-size: 16px;
+}
+
+/***********************************************
+***************** Profilside ******************/
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100%
+}
+
+#profileMain {
+    padding: 60px;
+    /*tells the element to include padding in its sizing*/
+    box-sizing: border-box;
+}
+
+#profileMain a {
+   text-decoration: none;
+    color: black;
+    
+}
+
+#profileMenu {
+    border: 1px solid #ec9335;
+    list-style: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 30px 60px;
+}
+
+#profileMenu a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+#profileContent {
+    /* Flex: 1 makes the content as wide as it can be in its parent */
+    flex: 1;
+}
+
+#achievements {
+    background-color: #16293E;
+    width: 900px;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+#achievements h2 {
+    color: white
+}
+
+#achievements ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement {
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    margin: 10px 30px;;
+    border-radius: 50%;
+}
+
+.go-to-btn {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid;
+    transform: translateY(40px);
+}
+
+#stepsBox {
+    background-color: #3FAC4E;
+    padding: 20px;
+}
+
+#stepsInput {
+    margin: 10px 0;
+}
+
+#saveBtn {
+    background-color: #ec9335;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+#weatherBox {
+    background-color: #D4D4D4;
+    border: 1px solid #ec9335;
+    padding: 20px;
+    flex: 1;
+    margin-left: 60px;
+}
+
+
+/***********************************************
+***************** Betalingsside ***************/
 #heading {
     font-size: 25px;
     font-weight: bolder;
@@ -33,7 +148,7 @@ body {
 #adresse {
     width: 120%;
 }
-
+ /*
 button {
     border: none;
     width: 20em;
@@ -41,3 +156,4 @@ button {
     background-color: #54595f;
     color: #ffffff;
 }
+*/

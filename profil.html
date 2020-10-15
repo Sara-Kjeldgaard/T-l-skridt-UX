@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tæl skridt</title>
+        <meta name="author" content="Your Name" />
+        <meta name="description" content="Example description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="icon" type="image/x-icon" href="" />
+    </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>Example Title</title>
-	<meta name="author" content="Your Name">
-	<meta name="description" content="Example description">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="">
-	<link rel="icon" type="image/x-icon" href=""/>
-</head>
+    <body>
+        <header></header>
+        <main id="profileMain" class="row">
+            <ul id="profileMenu" class="column">
+                <li>
+                    <a href="#"> Overblik</a>
+                </li>
+                <li>
+                    <a href="#"> Min profil</a>
+                </li>
+                <li>
+                    <a href="#"> Indtast skridt</a>
+                </li>
+                <li>
+                    <a href="#"> Stillingen</a>
+                </li>
+                <li>
+                    <a href="#"> Udfordre andre</a>
+                </li>
+                <li>
+                    <a href="#"> Holdchatten</a>
+                </li>
+                <li>
+                    <a href="#"> Ugekonkurrencer</a>
+                </li>
+                <li>
+                    <a href="#"> Målsætninger</a>
+                </li>
+            </ul>
 
-<body>
-	<header></header>
-	<main></main>
-	<footer></footer>
-	<script type="text/javascript" src=""></script>
-</body>
+            <div id="profileContent" class="column">
+                <div id="achievements" class="column">
+                    <h2>Målsætninger</h2>
+                    <ul class="row">
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                    </ul>
+                    <ul class="row">
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                        <li class="achievement"></li>
+                    </ul>
+                    <a href="#" class="go-to-btn">Gå til målsætninger</a>
+                </div>
 
+                <div class="row">
+                    <div id="stepsBox" class="column">
+                        <h2>Indtast skridt</h2>
+                        <div class="row" id="stepsInput">
+                            <input type="number" name="steps" />
+                            <button id="saveBtn">Gem</button>
+                        </div>
+                        <p>Eller</p>
+                        <a href="#" class="go-to-btn">Gå til indtast skridt</a>
+                    </div>
+                    <div id="weatherBox" class="column">
+                        <h2>Vejr</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script type="text/javascript" src=""></script>
+    </body>
 </html>
