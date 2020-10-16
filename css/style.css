@@ -4,16 +4,16 @@
 
 body {
     font-family: "Montserrat";
-    color: #16293e;
 }
-html, body, main {
+html,
+body,
+main {
     width: 100%;
-    margin: 0; 
+    margin: 0;
 }
-
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /***********************************************
@@ -26,7 +26,7 @@ h2 {
 
 .row {
     display: flex;
-    width: 100%
+    width: 100%;
 }
 
 #profileMain {
@@ -36,17 +36,17 @@ h2 {
 }
 
 #profileMain a {
-   text-decoration: none;
+    text-decoration: none;
     color: black;
-    
 }
 
 #profileMenu {
     border: 1px solid #ec9335;
     list-style: none;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 80px;
     padding: 30px 60px;
+    align-items: baseline
 }
 
 #profileMenu a {
@@ -55,20 +55,24 @@ h2 {
     padding: 10px;
 }
 
+#profileMenu #selectedPage {
+    font-weight: bold;
+}
+
 #profileContent {
-    /* Flex: 1 makes the content as wide as it can be in its parent */
-    flex: 1;
+    width: 1000px;
 }
 
 #achievements {
-    background-color: #16293E;
-    width: 900px;
+    background-color: #16293e;
+    width: 100%;
     margin-bottom: 60px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 #achievements h2 {
-    color: white
+    color: white;
 }
 
 #achievements ul {
@@ -83,7 +87,7 @@ h2 {
     background-color: white;
     height: 70px;
     width: 70px;
-    margin: 10px 30px;;
+    margin: 10px 30px;
     border-radius: 50%;
 }
 
@@ -95,8 +99,9 @@ h2 {
 }
 
 #stepsBox {
-    background-color: #3FAC4E;
-    padding: 20px;
+    background-color: #3fac4e;
+    padding: 20px 50px;
+    color: white;
 }
 
 #stepsInput {
@@ -109,16 +114,23 @@ h2 {
     color: white;
     border: none;
     margin-left: 10px;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+#stepsBox p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
 #weatherBox {
-    background-color: #D4D4D4;
+    background-color: #d4d4d4;
     border: 1px solid #ec9335;
     padding: 20px;
     flex: 1;
-    margin-left: 60px;
+    margin-left: 90px;
 }
-
 
 /***********************************************
 ***************** Betalingsside ***************/
@@ -148,7 +160,7 @@ h2 {
 #adresse {
     width: 120%;
 }
- /*
+/*
 button {
     border: none;
     width: 20em;
