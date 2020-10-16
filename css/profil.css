@@ -1,0 +1,173 @@
+body {
+    font-family: "Montserrat";
+}
+html,
+body,
+main {
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/***********************************************
+***************** Profilside ******************/
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+#profileMain {
+    padding: 60px;
+    /*tells the element to include padding in its sizing*/
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#profileMain a {
+    text-decoration: none;
+    color: black;
+}
+
+#profileMenu {
+    border: 1px solid #ec9335;
+    list-style: none;
+    margin: 0;
+    margin-right: 80px;
+    padding: 30px 60px;
+    align-items: baseline;
+}
+
+#profileMenu a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+#profileMenu #selectedPage {
+    font-weight: bold;
+}
+
+#paymentDummy {
+    background-color: #ec9335;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+#profileContent {
+    width: 1000px;
+}
+
+#achievements {
+    background-color: #16293e;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#achievements h2 {
+    color: white;
+}
+
+#achievements ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement {
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    margin: 10px 30px;
+    border-radius: 50%;
+}
+
+.go-to-btn {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid;
+    transform: translateY(40px);
+}
+
+#stepsBox {
+    background-color: #3fac4e;
+    padding: 20px 50px;
+    color: white;
+}
+
+#stepsInput {
+    margin: 10px 0;
+}
+
+#saveBtn {
+    background-color: #ec9335;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+#stepsBox p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#weatherBox {
+    background-color: #d4d4d4;
+    border: 1px solid #ec9335;
+    padding: 20px;
+    flex: 1;
+    margin-left: 90px;
+}
+
+/***********************************************
+***************** pop-up styling ***************/
+#popUpBackground {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popUpContent {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    
+}
+
+#popUpActions {
+    background-color: #16293e;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
