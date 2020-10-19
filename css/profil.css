@@ -139,6 +139,10 @@ h2 {
     margin-left: 90px;
 }
 
+#weatherBox p, #weatherBox figure {
+    margin: 0;
+}
+
 /***********************************************
 ***************** pop-up styling ***************/
 #popUpBackground {
