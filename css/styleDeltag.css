@@ -1,0 +1,287 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/////SEKTIONER
+
+#wrapper {
+    height: 100%;
+    width: 1232px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+#deltager-type img {
+    width: 200px;
+    height: 200px;
+}
+
+#deltager-type, #holdKnapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#holdKnapper {
+    margin: 0 auto;
+}
+
+#nyt-hold img {
+    margin: auto;
+    display: block;
+}
+
+#tidligere-hold {
+    margin: 0 auto;
+}
+
+#ny-kaptajn, #tidligere-kaptajn, #tidligere-holddeltager {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 53px;
+    justify-content: center;
+    align-items: center;
+}
+
+#deltagerIMG, #deltagerKnapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deltagerIMG img {
+    padding: 0 17px;
+}
+#deltagerIMG img, #deltagerKnapper button {
+    margin: 0px 120px;
+}
+
+/*#ny-kaptajn a, #tidligere-kaptajn a, #tidligere-holddeltager a {
+    background-color: #16293e;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+	color: #ec9335;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    width: 234px;
+    height: 38px;
+}*/
+
+/*#ny-kaptajn button, #tidligere-kaptajn button, #tidligere-holddeltager button {
+    background-color: #16293e;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+	color: #ec9335;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    width: 234px;
+    height: 100px;
+}*/
+
+.deltager-knap.active {
+    background-color: #16293e;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+	color: #ec9335;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    width: 234px;
+    height: 100px;
+}
+
+
+
+
+#form {
+    width: 265px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/////TEKST
+
+p {
+    color: #54595f;
+    size: 15px;
+    font-weight: 400;
+}
+
+p, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#betalingsinfo {
+    font-weight: bolder;
+}
+
+
+#weather-description {
+    text-transform: capitalize;
+}
+
+/////KNAPPER
+
+button.deltager-knap {
+	background-color: #5c6978;
+	display: flex;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    margin: 15px;
+    width: 234px;
+    height: 38px;
+}
+button.deltager-knap {
+    background-color: #5c6978;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    width: 234px;
+    height: 100px;
+}
+
+.deltager-knap.active {
+    background-color: #16293e;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+	cursor: pointer;
+	color: #ec9335;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    width: 234px;
+    height: 100px;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    display: flex;
+    background-color: #ddd;
+    border-radius: 3px;
+    padding: 10px 12px;
+}
+
+.btn.active {
+    background-color: #000;
+    color: #fff;
+}
+.deltager-knap:active, .hold-knap:active, #deltag-knap:active {
+	position: relative;
+	top: 1px;
+}
+
+.hold-knap {
+    background-color: #5c6978;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    margin: 15px;
+    width: 313px;
+    height: 136px;
+}
+
+.hold-knap.active {
+    background-color: #16293e;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+	cursor: pointer;
+	color: #ec9335;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    margin: 15px;
+    width: 313px;
+    height: 136px;
+}
+
+#deltag-knap {
+    background-color: #ec9335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 16px 31px;
+	text-decoration: none;
+    width: 140px;
+    height: 42px;
+    margin: 23px auto 212px auto;
+}
+
+
+
+///// FORMS
+form {
+    /* Kan ikke fjernes, ingen anelse om hvorfor*/
+    display: block;
+    width: 265px;
+    height: auto;
+    margin: 0 auto;
+}
+
+input {
+    width: 265px;
+    height: 23px;
+    display: block;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 75px auto 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+#password {
+    margin: 0 auto 136px auto;
+}

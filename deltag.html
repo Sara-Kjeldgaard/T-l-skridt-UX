@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Deltag i Tæl Skridt!</title>
+	<meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="Your Name">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styleDeltag.css">
+	<link rel="icon" type="image/x-icon" href="images/"/>
+</head>
+
+<body>
+	<header></header>
+	    <main>
+            <div id="wrapper">
+               <div id="result"></div>
+                <h2>Velkommen!</h2>
+                <h2>Først skal vi vide hvad du er:</h2>
+                <!--<div id="deltager-type">
+                   <div id="ny-kaptajn">
+                       <img alt="ny kaptajn" src="images/nyKaptajn.png"/>
+                        <!--<a href="#" class="deltager-knap">Ny kaptajn</a>-->
+                        <!--<button class="deltager-knap">Ny kaptajn</button>
+                   </div>
+                   <div id="tidligere-kaptajn">
+                       <img alt="tidligere kaptajn" src="images/tidlKaptajn.png"/>
+                        <!--<a href="#" class="deltager-knap">Tidligere kaptajn</a>-->
+                        <!--<button class="deltager-knap">Tidligere kaptajn</button>
+                   </div>
+                   <div id="tidligere-holddeltager">
+                       <img alt="tidligere holddeltager" src="images/tidlHolddeltager.png"/>
+                        <!--<a href="#" class="deltager-knap">Tidligere holddeltager</a>-->
+                        <!--<button class="deltager-knap">Tidligere holddeltager</button>
+                   </div>
+                </div>-->
+                
+                <div id="deltagerIMG">
+                    <img alt="ny kaptajn" src="images/nyKaptajn.png"/>
+                    <img alt="tidligere kaptajn" src="images/tidlKaptajn.png"/>
+                    <img alt="tidligere holddeltager" src="images/tidlHolddeltager.png"/>
+                </div>
+
+               <div id="deltagerKnapper">
+                   <button class="deltager-knap" id="nyKaptajn">Ny kaptajn</button>
+                   <button class="deltager-knap" id="TidlKaptajn">Tidligere kaptajn</button>
+                   <button class="deltager-knap" id="TidlHolddeltager">Tidligere holddeltager</button>
+               </div>
+               
+                <h2>Så skal vi vide hvad du vil:</h2>
+
+                <div id="holdKnapper">
+                    <a href="#" class="hold-knap">Lav nyt hold</a>
+                    <a href="#" class="hold-knap">Genopret tidligere hold</a>
+                    
+                </div>
+
+                <div id="nyt-hold">
+                    <h2>Ohøj kaptajn! Velkommen ombord! Tilmeld dig venligst:</h2>
+
+                    <form>
+                        <label for="name">Navn:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="mobile">Mobil:</label><br>
+                        <input type="text" id="mobile" name="mobile"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="password">Kodeord:</label><br>
+                        <input type="password" id="password" name="password">
+                    </form>
+
+                    <h2>Lidt om priser og betaling:</h2>
+                    <p>Priserne varierer alt efter hvor mange gange du har deltaget i Tæl Skridt i samme år.</p>
+                    <p>Du opnår din specialpris ved at bruge samme mail hver gang, så du kommer billigere og billigere med gennem året.</p>
+                    <p id="betalingsinfo">Betalingen sker først når kampagnen starter og vi kender den endelige fordeling af nye og tidligere deltagere på dit/dine hold.</p>
+                    <img alt="priser" src="images/kampagnePriser.png"/>
+                </div>
+
+                <div id="tidligere-hold">
+                    <h2>Ohøj kaptajn! Velkommen tilbage, aktivér din konto herunder:</h2>
+
+                   <div class="form">
+                        <form>
+                            <label for="name">Navn:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="mobile">Mobil:</label><br>
+                            <input type="text" id="mobile" name="mobile"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="password">Kodeord:</label><br>
+                            <input type="password" id="password" name="password">
+                        </form>
+                    </div>
+                </div>
+                <a href="#" id="deltag-knap">Deltag</a>
+	        </div>
+	    </main>
+	<footer></footer>
+	
+	<!-- load jQuery library -->
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	
+	<!-- load JavaScript -->
+	<script src="js/js.js"></script>
+	
+</body>
+
+</html>
