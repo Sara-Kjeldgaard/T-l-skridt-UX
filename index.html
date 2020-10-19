@@ -12,13 +12,23 @@
 </head>
 
 <body>
-	<header>
-        
-    
-        
-    </header>
+	<header></header>
+	<main>
+	    	<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
 
-	<main></main>
+    <label for="email"><b>Email</b></label>
+    <input type="text"  name="email" required>
+
+    <label for="psw"><b>Kodeord</b></label>
+    <input type="password"  name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+	</main>
 	<footer></footer>
 	<script type="text/javascript" src=""></script>
 </body>
