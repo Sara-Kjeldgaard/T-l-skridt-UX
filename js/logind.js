@@ -6,12 +6,16 @@ $(document).ready(function() {
     popUp.hide();
 
     //We fetch the button though jQuery and make a click event to show the payment pop-up when the button is clicked. 
-    $("#paymentDummy").click(function() {
+    $("#menuLogIn").click(function() {
         popUp.show();
     })
     
     
     $("#popUpActions").click(function() {
+        popUp.hide();
+    })
+    
+    $("#close").click(function() {
         popUp.hide();
     })
 });
