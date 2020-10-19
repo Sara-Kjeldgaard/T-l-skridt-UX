@@ -1,6 +1,12 @@
 /**
  * file: css/style.css
  **/
+html,
+body,
+main{
+    width: 100%;
+    margin: 0;
+}
 
 body {
     font-family: 'Montserrat';
@@ -17,114 +23,76 @@ height: auto;
 .nav-list{
 width: 100%;
 display: flex;
-flex-flow:wrap;
 list-style-type: none;
 justify-content: space-around;
 align-items: center;
-border-bottom: 1px solid black;
+
 padding-left: 1px;
+
 
 }
 
 .nav-list a{
 text-decoration: none;
+font-weight:bold;
 font-size: 15px;
 color: black;
 font-family: 'Montserrat';
 }
 
-
-#heading {
-    font-size: 25px;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 2px;
+#logoImg {
+    margin-right: 300px;
 }
 
-.container{
+
+
+
+footer{
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5em;
-}
-
-.container2{
-    display: flex;
-    justify-content: center;
-}
-
-#navn {
-    width: 130%;
-}
-
-#adresse {
-    width: 130%;
-}
-
-button {
-    border: none;
-    width: 14em;
-    height: 7em;
-    background-color: #54595f;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 3em;
-}
-
-button:hover{
-    background-color: #16293e;
-    color: #ec9335;
-}
-
-#btn1{
-    margin-right: 3em;
-}
-
-#btn2{
-    margin-right: 3em;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #16293E;
+    color: white;
+    height: 300px;
+    
     
 }
 
-#btn3{
-    margin-right: 3em;
+#footerContent{
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+    
+    
+}
+.orangeFooter{
+    color:  #ec9335;
+}
+
+#some{
+    
+    width: 80px;
+    height: 50px;
     
 }
 
-.container3{
-    font-size: 15px;
-    justify-content: center;
+#footerSome{
     display: flex;
+    flex-direction: column;
+   align-items: center;
+    
 }
 
-#text{
-    margin-left: 1em;
-}
 
-a{
-    text-decoration: none;
-    color: #ec9335;
-}
-
-#btn{
-    display: block;
-    border: none;
-    width: 10em;
-    height: 3em;
+#facebookText{
+    width: 300px;
     text-align: center;
-    background-color: #ec9335;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
+    
 }
 
-.footer{
-    width:10em; 
-    align-items: center; 
-    padding-top: 30px;
-  }
-
-
-
+#deltagKnap{
+    background-color:  #ec9335;
+    color: white;
+    padding: 10px 35px; 
+    
+}
