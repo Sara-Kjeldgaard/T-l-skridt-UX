@@ -13,11 +13,11 @@
 
 <body>
 	<header>
-	     <button id="Logind">Log ind</button>
+	     <button id="logInd">Log ind</button>
 	</header>
 	<main>
         
-	    	<div class="popUpContent" id="myForm">
+	    	<!--<div class="popUpContent" id="myForm">
   <form action="/action_page.php" class="form-container">
    
     <label for="email"><b>Email</b></label>
@@ -29,7 +29,36 @@
     <button type="submit" class="btn">Login</button>
     <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
-  <div id="forside"> 
+</div>-->
+   
+   <div id="popUpBackground">
+            <div>
+                <div id="popUpContent">
+                    <form class="form-container">
+                    <button type="submit" id="close" onclick="closeForm()"></button>
+                    <h2>Login</h2>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" name="email" required>
+
+                    <label for="psw"><b>Adgangskode</b></label>
+                    <input type="password" name="psw" required>
+                    <a href="#">Nyt eller glemt kodeord?</a>
+
+                    <!--<button type="submit" class="btn">Login</button>-->
+                    <a href="profil.html" class="btn">Log in</a>
+                  </form>
+                </div>
+                <div id="popUpActions">
+                   <p>IKKE MED I ET HOLD?</p>
+                    <a href="deltag.html" id="popUpButton">DELTAG</a>
+                    <!-- LAV EVENTUEL GOOGLE KNAP -->
+                </div>
+            </div>
+        </div>
+   
+   
+    <div id="forside"> 
      <h1>Tæl skridt sammen med hele Danmark</h1>
      <div id= "sponsor">
          <img src="" alt="">
@@ -37,10 +66,9 @@
      </div>
       <a href="deltag.html" id="deltag-knap">Deltag</a>
       </div>
-</div>
 	</main>
 	<footer></footer>
-	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/logind.js"></script>
 </body>
 
 </html>
