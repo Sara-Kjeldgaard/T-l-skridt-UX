@@ -46,15 +46,19 @@ $(document).ready(function() {
     var nyHold = $("#nyt-hold");
     var holdKnapper = $("#holdKnapper");
     var deltagKnap = $("#deltag-knap");
-    
+    var actionText = $("#actionText");
     
     tidlHold.hide();
     nyHold.hide();
     holdKnapper.hide();
     deltagKnap.hide();
+    actionText.hide();
     
     $(function() {
         $(".deltager-knap").on("click", function(e) {
+            // Now we want to show the text prompting the user to select an action
+            actionText.show();
+            
             $(".deltager-knap.active").removeClass("active");
             $(this).addClass("active");
             holdKnapper.toggle(666);
