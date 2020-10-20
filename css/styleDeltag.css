@@ -58,36 +58,6 @@ body {
     margin: 0px 120px;
 }
 
-/*#ny-kaptajn a, #tidligere-kaptajn a, #tidligere-holddeltager a {
-    background-color: #16293e;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	cursor: pointer;
-	color: #ec9335;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	padding: 16px 31px;
-	text-decoration: none;
-    width: 234px;
-    height: 38px;
-}*/
-
-/*#ny-kaptajn button, #tidligere-kaptajn button, #tidligere-holddeltager button {
-    background-color: #16293e;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	cursor: pointer;
-	color: #ec9335;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	padding: 16px 31px;
-	text-decoration: none;
-    width: 234px;
-    height: 100px;
-}*/
-
 .deltager-knap.active {
     background-color: #16293e;
 	display: flex;
@@ -102,8 +72,6 @@ body {
     width: 234px;
     height: 100px;
 }
-
-
 
 
 #form {
@@ -129,6 +97,7 @@ h2 {
     font-weight: 400;
 }
 
+
 #betalingsinfo {
     font-weight: bolder;
 }
@@ -137,6 +106,7 @@ h2 {
 #weather-description {
     text-transform: capitalize;
 }
+                      
 
 /////KNAPPER
 
@@ -268,7 +238,9 @@ form {
     margin: 0 auto;
 }
 
-input {
+
+/*input*/
+#name, #mobile, #email, #password {
     width: 265px;
     height: 23px;
     display: block;
@@ -284,4 +256,21 @@ label {
 
 #password {
     margin: 0 auto 136px auto;
+}
+
+
+#lavNytHold:hover, #genopretGammeltHold:hover, #nyKaptajn:hover, #TidlKaptajn:hover, #TidlHolddeltager:hover {
+     background-color: #16293e;
+	color: #ec9335;
+}
+
+.container3{
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#text{
+    margin-left: 1em;
 }

@@ -25,24 +25,10 @@ $(document).ready(function() {
             console.log(data); // show what's in the json
 
             $("#weatherBox").append(
-                "<p>" +
-                    day +
-                    "-" +
-                    month +
-                    "-" +
-                    year +
-                    "</p>" +
-                    '<figure><img src="http://openweathermap.org/img/w/' +
-                    data.weather[0].icon +
-                    '.png" alt="The weather : ' +
-                    data.weather[0].main +
-                    '"></figure>' +
-                    "<p>" +
-                    data.main.temp +
-                    " grader</p>" +
-                    '<p id="weather-description">' +
-                    data.weather[0].description +
-                    "</p>"
+                "<p>" + day + "-" + month + "-" + year + "</p>" +
+                '<figure><img src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png" alt="The weather : ' + data.weather[0].main + '"></figure>' +
+                "<p>" + data.main.temp + " grader</p>" +
+                '<p id="weather-description">' + data.weather[0].description + "</p>"
             );
 
             // here are the icons: https://openweathermap.org/weather-conditions
@@ -55,10 +41,24 @@ $(document).ready(function() {
     /*
      *  Farveskift ved aktiv knap
      */
+    
+    var tidlHold = $("#tidligere-hold");
+    var nyHold = $("#nyt-hold");
+    var holdKnapper = $("#holdKnapper");
+    var deltagKnap = $("#deltag-knap");
+    
+    
+    tidlHold.hide();
+    nyHold.hide();
+    holdKnapper.hide();
+    deltagKnap.hide();
+    
     $(function() {
         $(".deltager-knap").on("click", function(e) {
             $(".deltager-knap.active").removeClass("active");
             $(this).addClass("active");
+            holdKnapper.toggle(666);
+            holdKnapper.show();
             e.preventDefault();
         });
     });
@@ -70,16 +70,29 @@ $(document).ready(function() {
             e.preventDefault();
         });
     });
+    
+    $("#lavNytHold").click(function() {
+        nyHold.toggle(666);
+        nyHold.show();
+        deltagKnap.show();
+    })
+    
+    $("#genopretGammeltHold").click(function() {
+        tidlHold.toggle(666);
+        tidlHold.show();
+        deltagKnap.show();
+    })
 
+    
     /*
      *  Åben sektioner v. klik-event
      */
-    $("#nyKaptajn").click(function() {
+    /*$("#nyKaptajn").click(function() {
         $("#nyt-hold").toggle(666);
     });
 
     $("#TidlKaptajn").click(function() {
         $("#tidligere-hold").toggle(666);
         $("#holdKnapper").toggle(666);
-    });
+    });*/
 }); // document ready end
