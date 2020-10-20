@@ -2,27 +2,32 @@
     font-size: 25px;
     font-weight: bolder;
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 30px;
 }
 
-.container{
+.container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 5em;
 }
 
-.container2{
+.container input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.container section {
+    width: 20%
+}
+
+#firma {
+    margin-right: 90px;
+}
+
+.container2 {
     display: flex;
     justify-content: center;
 }
 
-#navn {
-    width: 130%;
-}
-
-#adresse {
-    width: 130%;
-}
 
 button {
     border: none;
@@ -58,6 +63,7 @@ button:hover{
     font-size: 15px;
     justify-content: center;
     display: flex;
+    align-items: center;
 }
 
 #text{
